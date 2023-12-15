@@ -3,7 +3,8 @@ import Home from '../pages/Home'
 import Logement from '../pages/Logement'
 import Propos from '../pages/Propos'
 import Error from '../pages/Error'
-import Header from '..components/Header'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
                 <Route path="/Propos" element={<Propos />} />
                 <Route path="/Error" element={<Error />} />
             </Routes>
+            <Footer />
         </Router>
     )
 }

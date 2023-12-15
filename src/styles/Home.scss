@@ -1,0 +1,95 @@
+#header {
+    #logoheader {
+        display: flex;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    #buttonheader {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 60px;
+
+        #buthome {
+            color: #ff6060;
+            font-size: 24px;
+            font-weight: 500;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        #buthome:hover {
+            text-decoration: underline;
+        }
+        #butpropos {
+            color: #ff6060;
+            font-size: 24px;
+            font-weight: 500;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        #butpropos:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#homepage {
+    #banner {
+        display: flex;
+        margin: 80px;
+        #title {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            width: 1440px;
+            color: white;
+            font-size: 48px;
+            font-weight: 500;
+            z-index: 999;
+        }
+        #imgbanner {
+            display: flex;
+            position: relative;
+            object-fit: cover;
+            border-radius: 25px;
+            width: 1240px;
+            height: 223px;
+        }
+    }
+}
+#removecard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    #card {
+        display: flex;
+        align-items: flex-end;
+        margin: 10px;
+        border-radius: 10px;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 96, 96, 1) 60%,
+            rgba(24, 1, 1, 0.795) 100%
+        );
+        width: 340px;
+        height: 340px;
+        color: white;
+        font-size: 18px;
+    }
+}
+#footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    width: 1440px;
+    height: 250px;
+    #logofooter {
+        width: 150px;
+        margin-bottom: 40px;
+    }
+}
