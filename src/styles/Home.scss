@@ -103,16 +103,36 @@
 #propos {
     display: flex;
     margin: 40px;
-    background: black;
     border-radius: 25px;
+    flex-direction: column;
     #bannerpropos {
         display: flex;
-        position: relative;
         object-fit: cover;
         border-radius: 25px;
         width: 1360px;
         height: 223px;
         opacity: 0.8;
+    }
+}
+#collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 8px;
+    button {
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 1060px;
+        color: white;
+        background-color: #ff6060;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 
@@ -128,6 +148,7 @@
     width: 1440px;
     height: 250px;
     font-family: 'Montserrat', sans-serif;
+
     #logofooter {
         display: flex;
         width: 150px;

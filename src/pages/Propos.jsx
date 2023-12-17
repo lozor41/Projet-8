@@ -1,12 +1,15 @@
 import bannerimg from '../Image/proposimg.jpg'
-import Menufiabilité from '../components/Dropdown'
+import Collapse from '../components/Collapse'
 
-const Home = () => 
-<div id='propos'>
-    <img src={bannerimg} alt='Montagne' id='bannerpropos'></img>
-    <div>
-        <Menufiabilité></Menufiabilité>
+const Home = () => (
+    <div id="propos">
+        <div>
+            <img src={bannerimg} alt="Montagne" id="bannerpropos"></img>
+        </div>
+        <div id="collapse">
+            <Collapse></Collapse>
+        </div>
     </div>
-    </div>
+)
 
 export default Home
