@@ -1,15 +1,25 @@
-import Datalog from '../components/Datalog'
-import Menuequipement from '../components/Dropdown'
+import { useGetById } from '../components/Api'
+import { useParams } from 'react-router'
+import { Error } from './Error'
 
-const Home = () => (
-    <div>
+const Logement = () => {
+    const { id } = useParams()
+    const { data, isLoading, error } = useGetById(id)
+
+    if (error) return <span>Oups il y a eu un problème</span>
+
+    return (
         <div>
-            <img src=""></img>
-            <h1>Titre du logement</h1>
-            <h3>Lieu</h3>
-            <Menuequipement></Menuequipement>
+            {isLoading ? (
+                <div>Chargement...</div>
+            ) : (
+                <div>
+                    <span>{data.id}</span>
+                    <span>{data.description}</span>
+                </div>
+            )}
         </div>
-    </div>
-)
+    )
+}
 
-export default Home
+export default Logement
