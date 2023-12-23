@@ -1,1 +1,40 @@
-@import './Home.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Shrikhand&display=swap');
+
+#removecard {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    justify-content: center;
+    gap: 60px;
+    margin: 80px;
+
+    a {
+        display: flex;
+        background: black;
+        border-radius: 15px;
+    }
+
+    #card {
+        display: flex;
+        object-fit: cover;
+        cursor: pointer;
+
+        img {
+            object-fit: cover;
+            max-width: 340px;
+            height: 340px;
+            border-radius: 15px;
+            opacity: 0.8;
+        }
+        h2 {
+            display: flex;
+            align-items: flex-end;
+            position: absolute;
+            color: white;
+            width: 320px;
+            height: 300px;
+            margin-left: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
