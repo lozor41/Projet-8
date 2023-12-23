@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const Home = () => (
+const Error = () => (
     <div id="error">
         <h1>404</h1>
         <h3>Oups! La page que vous demandez n'existe pas.</h3>
@@ -10,4 +10,4 @@ const Home = () => (
     </div>
 )
 
-export default Home
+export default Error
