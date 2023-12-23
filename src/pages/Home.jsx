@@ -1,6 +1,6 @@
-import { useGet } from "../components/Api";
-import Card from "../components/Card";
-import Imghome from "../Image/Homekasa.png"
+import { useGet } from '../components/Api'
+import Card from '../components/Card'
+import Imghome from '../Image/Homekasa.png'
 
 const Home = () => {
     const { data, isLoading, error } = useGet()
@@ -14,9 +14,11 @@ const Home = () => {
                 <img src={Imghome} alt="Plage Falaise" id="imgbanner"></img>
             </div>
             <div id="removecard">
-                {isLoading ?
-                    (<div>Chargement...</div>) : (data.map(item => <Card key={item.id} data={item} />))
-                }
+                {isLoading ? (
+                    <div>Chargement...</div>
+                ) : (
+                    data.map((item) => <Card key={item.id} data={item} />)
+                )}
             </div>
         </div>
     )
