@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
-import Logement from '../pages/Logement'
-import Propos from '../pages/About'
+import Logement from '../pages/Lodging'
+import About from '../pages/About'
 import Error from '../pages/Error'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -11,10 +11,10 @@ const App = () => {
         <Router>
             <Header />
             <Routes>
-                <Route path="/Home" element={<Home />} />
-                <Route path="/Logement/:id" element={<Logement />} />
-                <Route path="/Propos" element={<Propos />} />
-                <Route path="/Error" element={<Error />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/lodging/:id" element={<Logement />} />
+                <Route path="/about" element={<About />} />
+                <Route path="*" element={<Error />} />
             </Routes>
             <Footer />
         </Router>

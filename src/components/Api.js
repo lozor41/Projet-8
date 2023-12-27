@@ -30,7 +30,10 @@ export const useGetById = (id) => {
             .then((res) => res.json())
             .then((data) => {
                 const result = data.filter((item) => id === item.id)
-                setData(result)
+                if (!result || result.length === 0) {
+                    throw new Error("Le logement n'existe pas")
+                }
+                setData(result[0])
             })
             .catch((error) => setError(error))
             .finally(() => setLoading(false))

@@ -1,13 +1,12 @@
 import { useGetById } from '../components/Api'
 import { useParams } from 'react-router'
-import { Error } from './Error'
-import { Link } from 'react-router-dom'
+import Error from './Error'
 
 const Logement = () => {
     const { id } = useParams()
     const { data, isLoading, error } = useGetById(id)
 
-    if (error) return <Link to="/Error" id="error"></Link>
+    if (error) return <Error />
 
     return (
         <div>

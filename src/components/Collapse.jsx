@@ -8,19 +8,19 @@ const Collapse = ({ title, content }) => {
     }
 
     return (
-        <div className="collapse__dropdown__container">
-            <div className="collapse__dropdown__title">
+        <div id="collapse__dropdown__container">
+            <div id="collapse__dropdown__title">
                 <h2>{title}</h2>
                 <p onClick={display}>
                     {isOpen ? (
-                        <i className="fa-solid fa-chevron-up"></i>
+                        <i id="fa-solid fa-chevron-up"></i>
                     ) : (
-                        <i className="fa-solid fa-chevron-down"></i>
+                        <i id="fa-solid fa-chevron-down"></i>
                     )}
                 </p>
             </div>
             {}
-            <div className="collapse__dropdown__content">
+            <div id="collapse__dropdown__content">
                 {isOpen && <p>{content}</p>}
             </div>
         </div>

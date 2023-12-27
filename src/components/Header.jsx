@@ -7,10 +7,10 @@ function Header() {
             <div id="header">
                 <img src={Logo} alt="logo" id="logoheader"></img>
                 <div id="buttonheader">
-                    <Link to="/Home" id="buthome">
+                    <Link to="/" id="buthome">
                         Accueil
                     </Link>
-                    <Link to="/Propos" id="butpropos">
+                    <Link to="/About" id="butpropos">
                         A Propos
                     </Link>
                 </div>

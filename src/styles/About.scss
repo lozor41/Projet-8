@@ -1,0 +1,40 @@
+#propos {
+    #banner {
+        display: flex;
+        margin: 40px;
+        background: black;
+        border-radius: 25px;
+        justify-content: center;
+        #bannerpropos {
+            display: flex;
+            object-fit: cover;
+            border-radius: 25px;
+            width: 1825px;
+            height: 223px;
+            opacity: 0.8;
+        }
+    }
+
+    #collapse {
+        display: flex;
+        justify-content: center;
+        background: none;
+        margin-bottom: 80px;
+        #collapse__dropdown {
+            display: flex;
+            flex-direction: column;
+            background: none;
+            #collapse__dropdown__container {
+                width: 980px;
+                height: 40px;
+                color: white;
+                background: #ff6060;
+
+                #collapse__dropdown__title {
+                    color: white;
+                    background: #ff6060;
+                }
+            }
+        }
+    }
+}
