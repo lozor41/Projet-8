@@ -1,29 +1,29 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react'
 
-const Collapse = ({ title, content }) => {
-    const [isOpen, setIsOpen] = useState(false)
+const Collapse = (props) => {
+    const [openTab, setOpenTab] = useState(false)
 
-    const display = () => {
-        setIsOpen(!isOpen)
+    const openTabHandler = () => {
+        setOpenTab((openTab) => !openTab)
     }
 
     return (
-        <div id="collapse__dropdown__container">
-            <div id="collapse__dropdown__title">
-                <h2>{title}</h2>
-                <p onClick={display}>
-                    {isOpen ? (
-                        <i id="fa-solid fa-chevron-up"></i>
-                    ) : (
-                        <i id="fa-solid fa-chevron-down"></i>
-                    )}
-                </p>
+        <>
+            <div onClick={openTabHandler} className="collapse_header">
+                <h2 className="collapse_header_title">{props.title}</h2>
+                {!openTab ? (
+                    <div id="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                ) : (
+                    <div>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                )}
             </div>
-            {}
-            <div id="collapse__dropdown__content">
-                {isOpen && <p>{content}</p>}
-            </div>
-        </div>
+            {openTab && <div className="collapse_content">{props.content}</div>}
+        </>
     )
 }
 
