@@ -1,0 +1,20 @@
+.tag {
+    width: 115px;
+    height: 25px;
+    text-align: center;
+    background-color: #ff6060;
+    border-radius: 12px;
+    margin: 20px 5px 24px 5px;
+    color: white;
+    height: 18px;
+    width: 84px;
+    margin: 10px 5px 16px 5px;
+
+    &__text {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        line-height: 17px;
+        font-size: 10px;
+    }
+}

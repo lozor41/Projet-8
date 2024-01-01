@@ -1,10 +1,12 @@
 import React from 'react'
 
-const Tags = ({ getTag }) => {
+function Tags(props) {
     return (
-        <div className="tag">
-            <p className="tag__text">{getTag}</p>
-        </div>
+        <>
+            <div className="tag">
+                <p className="tag__text">{props.tags}</p>
+            </div>
+        </>
     )
 }
 

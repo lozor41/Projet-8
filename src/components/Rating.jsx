@@ -1,6 +1,4 @@
 import React from 'react'
-
-// style
 import redstar from '../Image/redstar.svg'
 import greystar from '../Image/greystar.svg'
 

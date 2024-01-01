@@ -2,6 +2,8 @@
     color: #ff6060;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .Fiche-logement {
     display: flex;
@@ -23,16 +25,18 @@
             justify-content: center;
             margin-bottom: 15px;
             .titre-logement {
-                font-size: 500;
+                font-size: 36px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 142.6%;
+                margin-left: 20px;
             }
             .endroit-logement {
-                font-size: 500;
+                font-size: 18px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 142.6%;
+                margin-left: 18px;
             }
         }
         &__tags {
@@ -55,7 +59,7 @@
                 flex-direction: column;
                 justify-content: center;
                 .titre-logement {
-                    font-size: 500;
+                    font-size: 36px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 142.6%;
@@ -63,7 +67,7 @@
                     align-items: flex-end;
                 }
                 .endroit-logement {
-                    font-size: 500;
+                    font-size: 18px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 142.6%;
@@ -91,7 +95,7 @@
             justify-content: center;
             align-items: center;
             .nom-proprietaire {
-                font-size: 500;
+                font-size: 18px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 142.6%;
@@ -135,11 +139,9 @@
         justify-content: space-between;
         &__description {
             width: 50%;
-            padding-right: 40px;
         }
         &__equipement {
             width: 50%;
-            padding-left: 40px;
         }
     }
 }
