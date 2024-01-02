@@ -1,20 +1,28 @@
-.tag {
-    width: 115px;
-    height: 25px;
-    text-align: center;
-    background-color: #ff6060;
-    border-radius: 12px;
-    margin: 20px 5px 24px 5px;
-    color: white;
-    height: 18px;
-    width: 84px;
-    margin: 10px 5px 16px 5px;
+.tags {
+    display: flex;
+    margin-left: 18px;
 
-    &__text {
-        font-size: 20px;
+    .tag {
+        background-color: #ff6060;
+        height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-style: normal;
         font-weight: 500;
+        font-size: 14px;
+        line-height: 142.6%;
+        text-align: center;
         color: white;
-        line-height: 17px;
+        margin-right: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 748px) {
+    .tag {
         font-size: 10px;
+        height: 18px;
     }
 }

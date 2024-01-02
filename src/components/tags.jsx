@@ -1,13 +1,11 @@
-import React from 'react'
-
-function Tags(props) {
-    return (
-        <>
-            <div className="tag">
-                <p className="tag__text">{props.tags}</p>
+const Tags = ({ tags }) => (
+    <div className="tags">
+        {tags.map((tag, index) => (
+            <div key={`tag-${index}`} className="tag">
+                {tag}
             </div>
-        </>
-    )
-}
+        ))}
+    </div>
+)
 
 export default Tags

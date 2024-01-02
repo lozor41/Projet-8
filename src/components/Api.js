@@ -19,7 +19,7 @@ export const useGet = () => {
     return { isLoading, data, error }
 }
 
-export const useGetById = (id) => {
+export const useGetById = id => {
     const [data, setData] = useState({})
     const [isLoading, setLoading] = useState(true)
     const [error, setError] = useState(false)

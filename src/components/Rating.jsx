@@ -7,23 +7,14 @@ const Rating = ({ rating }) => {
 
     return (
         <div className="rating">
-            {stars.map((star) =>
-                rating >= star ? (
-                    <img
-                        key={star.toString()}
-                        className="rating__icon"
-                        src={redstar}
-                        alt="etoile rouge"
-                    />
-                ) : (
-                    <img
-                        key={star.toString()}
-                        className="rating__icon"
-                        src={greystar}
-                        alt="etoile grise"
-                    />
-                ),
-            )}
+            {stars.map((item, index) => (
+                <img
+                    className="rating_icon"
+                    key={`star-${index}`}
+                    src={index <= rating - 1 ? redstar : greystar}
+                    alt={`star n°${index + 1}`}
+                />
+            ))}
         </div>
     )
 }

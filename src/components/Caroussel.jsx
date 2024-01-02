@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Arrow_left from '../Image/arrow_left.png'
+import Arrow_right from '../Image/arrow_right.png'
 
 function Carrousel({ slides }) {
     const [current, setCurrent] = useState(0)
@@ -18,12 +20,12 @@ function Carrousel({ slides }) {
         <section className="slide">
             {length > 1 && (
                 <p className="left-Arrow" onClick={prevImage}>
-                    <i className="fa-solid fa-chevron-left"></i>
+                    <img src={Arrow_left} alt="arrow left"></img>
                 </p>
             )}
             {length > 1 && (
                 <p className="right-Arrow" onClick={nextImage}>
-                    <i className="fa-solid fa-chevron-right"></i>
+                    <img src={Arrow_right} alt="arrow right"></img>
                 </p>
             )}
             {slides.map((image, index) => {

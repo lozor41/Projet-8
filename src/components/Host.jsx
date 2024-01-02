@@ -3,9 +3,9 @@ import React from 'react'
 function Host(props) {
     return (
         <>
-            <span className="nom-proprietaire">{props.name}</span>
+            <span className="host-name">{props.name}</span>
             <img
-                className="photo-proprietaire"
+                className="host-picture"
                 src={props.picture}
                 alt="Propriétaire"
             />

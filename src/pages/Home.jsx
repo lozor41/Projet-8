@@ -1,11 +1,12 @@
 import { useGet } from '../components/Api'
 import Card from '../components/Card'
 import Imghome from '../Image/Homekasa.png'
+import Error from '../pages/Error'
 
 const Home = () => {
     const { data, isLoading, error } = useGet()
 
-    if (error) return <span>Oups il y a eu un problème</span>
+    if (error) return <Error />
 
     return (
         <div id="homepage">

@@ -63,11 +63,11 @@
 .right-Arrow {
     display: flex;
     position: absolute;
-    font-size: 1.5rem;
-    top: 42%;
-    right: 2%;
+    font-size: 50px;
+    top: 28%;
+    right: 5%;
     width: 12px;
-    height: 20px;
+    height: 100px;
     z-index: 10;
     cursor: pointer;
     color: #ffffff;
@@ -76,10 +76,10 @@
 .left-Arrow {
     display: flex;
     position: absolute;
-    font-size: 1.5rem;
-    top: 42%;
+    font-size: 50px;
+    top: 28%;
     left: 2%;
-    height: 20px;
+    height: 100px;
     width: 12px;
     z-index: 10;
     cursor: pointer;
