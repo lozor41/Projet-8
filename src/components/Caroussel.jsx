@@ -33,7 +33,7 @@ function Carrousel({ slides }) {
                     <div
                         key={index}
                         className={
-                            index === current ? 'slider active' : 'slider'
+                            index === current ? 'slider actif' : 'slider'
                         }
                     >
                         {index === current && (

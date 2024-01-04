@@ -17,9 +17,6 @@
             margin-right: 20px;
             font-family: 'Montserrat', sans-serif;
         }
-        #buthome:hover {
-            text-decoration: underline;
-        }
         #butpropos {
             color: #ff6060;
             font-size: 24px;
@@ -27,8 +24,8 @@
             margin-right: 20px;
             font-family: 'Montserrat', sans-serif;
         }
-        #butpropos:hover {
-            text-decoration: underline;
-        }
     }
+}
+.active {
+    text-decoration: underline #ff6060;
 }
