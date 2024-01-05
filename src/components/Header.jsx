@@ -8,7 +8,7 @@ function Header() {
                 <img src={Logo} alt="logo" id="logoheader"></img>
                 <div id="buttonheader">
                     <NavLink to="/" id="buthome">
-                        Accueil
+                        <nav>Accueil</nav>
                     </NavLink>
                     <NavLink to="/About" id="butpropos">
                         A Propos
