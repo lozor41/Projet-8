@@ -26,7 +26,8 @@
             border-radius: 15px;
             opacity: 0.8;
             @media screen and (max-width: 769px) {
-                max-width: 450px;
+                max-width: 350px;
+                max-height: 280px;
             }
         }
         h2 {
@@ -39,6 +40,10 @@
             font-size: 20px;
             margin-left: 10px;
             font-family: 'Montserrat', sans-serif;
+            @media screen and (max-width: 769px) {
+                font-size: 18px;
+                height: 250px;
+            }
         }
     }
     @media screen and (max-width: 769px) {
