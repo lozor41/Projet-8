@@ -38,8 +38,11 @@
                 font-size: 20px;
             }
         }
+        a {
+            text-decoration: none;
+        }
+        a.active {
+            text-decoration: underline #ff6060;
+        }
     }
-}
-.active {
-    text-decoration: none;
 }
