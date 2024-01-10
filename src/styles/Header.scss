@@ -25,7 +25,10 @@
             margin-right: 20px;
             font-family: 'Montserrat', sans-serif;
             @media screen and (max-width: 769px) {
-                font-size: 20px;
+                position: inherit;
+                bottom: 10px;
+                font-size: 28px;
+                font-variant-caps: all-small-caps;
             }
         }
         #butpropos {
@@ -35,7 +38,10 @@
             margin-right: 20px;
             font-family: 'Montserrat', sans-serif;
             @media screen and (max-width: 769px) {
-                font-size: 20px;
+                position: inherit;
+                bottom: 10px;
+                font-size: 28px;
+                font-variant-caps: all-small-caps;
             }
         }
         a {

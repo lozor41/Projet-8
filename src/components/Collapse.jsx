@@ -16,11 +16,11 @@ const Collapse = (props) => {
                 <h2 className="collapse_header_title">{props.title}</h2>
                 {!openTab ? (
                     <div id="arrow_down">
-                        <img src={Arrow_down} alt="arrow down"></img>
+                        <img src={Arrow_up} alt="arrow up"></img>
                     </div>
                 ) : (
                     <div id="arrow_up">
-                        <img src={Arrow_up} alt="arrow up"></img>
+                        <img src={Arrow_down} alt="arrow down"></img>
                     </div>
                 )}
             </div>
