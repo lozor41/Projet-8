@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Projet-8/static/css/main.e68b2c9f.css",
+    "main.js": "/Projet-8/static/js/main.dc1f9e8f.js",
+    "static/js/787.55560dbc.chunk.js": "/Projet-8/static/js/787.55560dbc.chunk.js",
+    "static/media/proposimg.jpg": "/Projet-8/static/media/proposimg.796d007cebdd47cc489b.jpg",
+    "static/media/Homekasa.png": "/Projet-8/static/media/Homekasa.19221376a0aa2549c135.png",
+    "static/media/Logo.jpg": "/Projet-8/static/media/Logo.8b4db754f33811850477.jpg",
+    "index.html": "/Projet-8/index.html",
+    "static/media/redstar.svg": "/Projet-8/static/media/redstar.d240b10f0020a6d071a1d4927acb5999.svg",
+    "static/media/greystar.svg": "/Projet-8/static/media/greystar.38752bcafc1045fa6b545169fb0eb2eb.svg",
+    "main.e68b2c9f.css.map": "/Projet-8/static/css/main.e68b2c9f.css.map",
+    "main.dc1f9e8f.js.map": "/Projet-8/static/js/main.dc1f9e8f.js.map",
+    "787.55560dbc.chunk.js.map": "/Projet-8/static/js/787.55560dbc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e68b2c9f.css",
+    "static/js/main.dc1f9e8f.js"
+  ]
+}
